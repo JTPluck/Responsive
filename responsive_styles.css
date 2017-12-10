@@ -1,0 +1,131 @@
+@charset "utf-8";
+
+body {
+    min-width:320px;
+}
+
+/* Default styles for most sites */
+img {
+    width:100%;
+    display:block;
+}
+
+footer, p {
+    padding:1em;
+}
+
+header {
+	background-color:#efefef;
+    color:#000;
+    text-align: left;
+}
+
+.logo {
+	width:120px;
+	height:120px;
+	display:inline;
+}
+
+.footer2 {
+    border:1px solid #000;
+    color:#000;
+}
+
+.footer h3 {
+    padding:1em;
+}
+
+header h1 {
+    color:white;
+    text-align:center;
+    padding:1em;
+    font-size:2em;
+}
+
+nav {
+    background-color:#99ddff;
+    padding:0;
+    text-align:center;
+}
+
+nav a:hover {
+    color:aqua;
+    text-decoration: underline;
+}
+
+nav a {
+    display:block;
+    padding:0.5em;
+    border: solid 1px white;
+}
+
+nav a {
+    color:white;
+}
+
+nav:after {
+    clear:both;
+    content:"";
+    display:table;
+}
+
+/* Menu */
+ul.submenu {
+    display:none;
+    background-color:black;
+}
+
+a.submenuheader:hover {
+    background-color:yellow;
+}
+
+a.submenuheader:hover+ul.submenu, ul.submenu:hover {
+    display:block;
+}
+
+a.submenuheader {
+    font-weight: bolder;
+}
+
+/* Responsive CSS */
+/* Mobile */
+@media only screen and (min-width:481px) {
+
+    nav ul > li {
+        float:left;
+        width:20%;
+        position:relative;
+    }
+    
+    ul.submenu {
+        width:120%;
+        position:absolute;
+    }
+    
+    ul.submenu li {
+        float:none;
+        width:100%;
+        text-align:left;
+    }
+    
+    ul.submenu a:before {
+        content:"-> "
+    }
+    
+    p {
+        float:left;
+        width:50%;
+    }
+    
+    img {
+        padding:1em;
+    }
+    
+    main:after {
+        clear:both;
+        content:"";
+        display:table;
+    }
+    
+}
+
